@@ -10,20 +10,14 @@ import NotFound from '@/views/404'
 import UpdatePassword from '@/views/update-password'
 import pay from '@/views/pay'
 import register from '@/views/register'
-import center from '@/views/center'
-    import news from '@/views/modules/news/list'
-    import aboutus from '@/views/modules/aboutus/list'
-    import yaopinxinxi from '@/views/modules/yaopinxinxi/list'
-    import yaopinfenlei from '@/views/modules/yaopinfenlei/list'
-    import friendlink from '@/views/modules/friendlink/list'
-    import rukuxinxi from '@/views/modules/rukuxinxi/list'
-    import chathelper from '@/views/modules/chathelper/list'
-    import yonghu from '@/views/modules/yonghu/list'
-    import chat from '@/views/modules/chat/list'
-    import orders from '@/views/modules/orders/list'
-    import discussyaopinxinxi from '@/views/modules/discussyaopinxinxi/list'
-    import config from '@/views/modules/config/list'
-    import newstype from '@/views/modules/newstype/list'
+import yaopinxinxi from '@/views/modules/yaopinxinxi/list'
+import yaopinfenlei from '@/views/modules/yaopinfenlei/list'
+import rukuxinxi from '@/views/modules/rukuxinxi/list'
+import chathelper from '@/views/modules/chathelper/list'
+import yonghu from '@/views/modules/yonghu/list'
+import chat from '@/views/modules/chat/list'
+import orders from '@/views/modules/orders/list'
+import discussyaopinxinxi from '@/views/modules/discussyaopinxinxi/list'
 
 
 //2.配置路由   注意：名字
@@ -47,22 +41,7 @@ export const routes = [{
       name: '支付',
       component: pay,
       meta: {icon:'', title:'pay'}
-    }, {
-      path: '/center',
-      name: '个人信息',
-      component: center,
-      meta: {icon:'', title:'center'}
-    }
-      ,{
-	path: '/news',
-        name: '公告资讯',
-        component: news
-      }
-      ,{
-	path: '/aboutus',
-        name: '关于我们',
-        component: aboutus
-      }
+    },
       ,{
 	path: '/yaopinxinxi',
         name: '药品信息',
@@ -73,11 +52,7 @@ export const routes = [{
         name: '药品分类',
         component: yaopinfenlei
       }
-      ,{
-	path: '/friendlink',
-        name: '友情链接',
-        component: friendlink
-      }
+
       ,{
 	path: '/rukuxinxi',
         name: '入库信息',
@@ -107,16 +82,6 @@ export const routes = [{
 	path: '/discussyaopinxinxi',
         name: '药品信息评论',
         component: discussyaopinxinxi
-      }
-      ,{
-	path: '/config',
-        name: '',
-        component: config
-      }
-      ,{
-	path: '/newstype',
-        name: '公告资讯分类',
-        component: newstype
       }
     ]
   },
