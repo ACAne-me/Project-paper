@@ -45,7 +45,7 @@ export default new VueRouter({
 	routes:[
 		{
       path: '/',
-      redirect: '/index/home'
+      redirect: '/login'
     },
 		{
 			path: '/index',
