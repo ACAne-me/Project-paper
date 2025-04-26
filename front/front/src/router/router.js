@@ -12,8 +12,7 @@ import AddrAdd from '../pages/shop-address/addOrUpdate'
 import Order from '../pages/shop-order/list'
 import OrderConfirm from '../pages/shop-order/confirm'
 import Cart from '../pages/shop-cart/list'
-import News from '../pages/news/news-list'
-import NewsDetail from '../pages/news/news-detail'
+
 import payList from '../pages/pay'
 
 import yonghuList from '../pages/yonghu/list'
@@ -31,15 +30,7 @@ import rukuxinxiAdd from '../pages/rukuxinxi/add'
 import chathelperList from '../pages/chathelper/list'
 import chathelperDetail from '../pages/chathelper/detail'
 import chathelperAdd from '../pages/chathelper/add'
-import newstypeList from '../pages/newstype/list'
-import newstypeDetail from '../pages/newstype/detail'
-import newstypeAdd from '../pages/newstype/add'
-import aboutusList from '../pages/aboutus/list'
-import aboutusDetail from '../pages/aboutus/detail'
-import aboutusAdd from '../pages/aboutus/add'
-import friendlinkList from '../pages/friendlink/list'
-import friendlinkDetail from '../pages/friendlink/detail'
-import friendlinkAdd from '../pages/friendlink/add'
+
 import discussyaopinxinxiList from '../pages/discussyaopinxinxi/list'
 import discussyaopinxinxiDetail from '../pages/discussyaopinxinxi/detail'
 import discussyaopinxinxiAdd from '../pages/discussyaopinxinxi/add'
@@ -95,14 +86,6 @@ export default new VueRouter({
 				{
 					path: 'shop-order/orderConfirm',
 					component: OrderConfirm
-				},
-				{
-					path: 'news',
-					component: News
-				},
-				{
-					path: 'newsDetail',
-					component: NewsDetail
 				},
 				{
 					path: 'yonghu',
@@ -163,42 +146,6 @@ export default new VueRouter({
 				{
 					path: 'chathelperAdd',
 					component: chathelperAdd
-				},
-				{
-					path: 'newstype',
-					component: newstypeList
-				},
-				{
-					path: 'newstypeDetail',
-					component: newstypeDetail
-				},
-				{
-					path: 'newstypeAdd',
-					component: newstypeAdd
-				},
-				{
-					path: 'aboutus',
-					component: aboutusList
-				},
-				{
-					path: 'aboutusDetail',
-					component: aboutusDetail
-				},
-				{
-					path: 'aboutusAdd',
-					component: aboutusAdd
-				},
-				{
-					path: 'friendlink',
-					component: friendlinkList
-				},
-				{
-					path: 'friendlinkDetail',
-					component: friendlinkDetail
-				},
-				{
-					path: 'friendlinkAdd',
-					component: friendlinkAdd
 				},
 				{
 					path: 'discussyaopinxinxi',
