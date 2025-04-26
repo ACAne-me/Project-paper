@@ -48,4 +48,4 @@
 
 ## 📝 Notes
 - Make sure your MySQL service is running before starting the backend.
-- If port conflicts occur, adjust `application.properties` or `vue.config.js` as needed.
+- If port conflicts occur, adjust `application.yml` or `vue.config.js` as needed.
