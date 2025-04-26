@@ -14,6 +14,7 @@ run the front Project-paper-main\admin\admin    npm run serve
 
 the backControlSystem username:admin password:admin
 
+the front system: if you frist use,you should click the login/register to login username:用户名1 password:123456
 
 
 
