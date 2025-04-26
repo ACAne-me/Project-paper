@@ -48,8 +48,32 @@
 			<img v-if="headportrait&&Token" :style='{"width":"40px","margin":"0 6px","borderRadius":"50%","display":"none","height":"40px"}' :src="headportrait?baseUrl + headportrait:require('@/assets/avator.png')">
 			<div v-if="Token" :style='{"padding":"0 12px","fontSize":"16px","lineHeight":"32px","color":"black","height":"32px"}'>{{username}}</div>
 			<div v-if="Token && notAdmin" :style='{"cursor":"pointer","padding":"0 12px","fontSize":"16px","lineHeight":"32px","color":"black","height":"32px"}' @click="goMenu('/index/center')">个人中心</div>
-			<el-button v-if="!Token" @click="toLogin()" :style='{"border":"none","padding":"0 12px 0 40px","margin":"0 10px","color":"#fff","display":"inline-block","right":"18vw","borderRadius":"2px","top":"0","background":"url(http://codegen.caihongy.cn/20231107/82c85784c16b4bc199d9ce063ad5304e.png) no-repeat left center","fontSize":"16px","lineHeight":"32px","position":"absolute","height":"48px"}'>登录/注册</el-button>
-			<el-button v-if="Token" @click="logout" type="primary" icon="el-icon-search">退出</el-button>
+      <el-button
+          v-if="!Token"
+          @click="toLogin()"
+          style="
+    background: transparent;
+    color: #409EFF;
+    font-size: 16px;
+    border: 1px solid #409EFF;
+    padding: 10px 20px;
+    border-radius: 24px;
+    position: absolute;
+    right: 18vw;
+    top: 20px;
+    height: auto;
+    line-height: normal;
+    transition: all 0.3s ease;
+  "
+          @mouseover="hover = true"
+          @mouseleave="hover = false"
+      >
+        Login/Register
+      </el-button>
+
+
+
+      <el-button v-if="Token" @click="logout" type="primary" icon="el-icon-search">退出</el-button>
 		</div>
 
 		<div class="menu-preview" :style='{"padding":"0px 0px 0px 100px","overflow":"auto","top":"50px","left":"10%","background":"#fff","bottom":"0","fontSize":"0px","zIndex":"1001"}'>
